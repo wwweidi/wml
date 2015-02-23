@@ -1,0 +1,15 @@
+{
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wwweidi/wml"
+    },
+
+    "dependencies": {
+        "connect": "~3.3",
+        "serve-static": "~1.8",
+        "body-parser": "~1.11",
+        "node-schedule": "~0.1.16",
+        "lirc_node": "~0.0.1"
+    }
+
+}
