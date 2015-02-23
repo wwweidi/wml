@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Wake Me Light</title>
+    <script src="jquery.js" type="application/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="wecker.css">
+</head>
+<body>
+<h1>Weck Mich Licht</h1>
+<script src="client.js" type="application/javascript"></script>
+
+<h2>Remote Control</h2>
+<div id="IR">
+    <label for="irCmd">IR Command</label>
+    <input id="irCmd">
+    <button onclick="sendIR()">Send</button>
+</div>
+
+<h2>Wecker Liste</h2>
+<table id="weckerList"></table>
+
+<h2>Neuer Wecker</h2>
+<div id="NW">
+    <p>
+    <label for="weckerName">Name</label><input id="weckerName">
+    </p>
+    <p>
+    <label for="weckerCmd">Aktion</label><input id="weckerCmd">
+    </p><p>
+    <label for="weckerH">Stunde</label><input id="weckerH">
+    </p><p>
+    <label for="weckerM">Minuten</label><input id="weckerM">
+    </p><p>
+    <label>Jeden</label>
+        <input type="checkbox" name="dow" value="1">Mo
+        <input type="checkbox" name="dow" value="2">Di
+        <input type="checkbox" name="dow" value="3">Mi
+        <input type="checkbox" name="dow" value="4">Do
+        <input type="checkbox" name="dow" value="5">Fr
+        <input type="checkbox" name="dow" value="6">Sa
+        <input type="checkbox" name="dow" value="0">So
+</p>
+    <button onclick="createWecker()" >Create</button>
+</div>
+
+</body>
+</html>
